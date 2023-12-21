@@ -53,3 +53,4 @@ execução de 2 ou mais componentes de um dos sistemas
 utilizando flags de referência e o timer no monitor de série. Esta análise
 deverá ser feita considerando 2 versões do programa de um dos sistemas de
 modo a concluir qual deles é energeticamente mais eficiente. 
+
