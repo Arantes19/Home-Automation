@@ -1,8 +1,8 @@
-# SETR_TP_2023
+# Home-Automation
 
-## Sistema A – Controlo de iluminação interior 
-Desenvolver um sistema de controlo de luminosidade do espaço interior, em que em função da intensidade da luz solar, a iluminação do espaço será ajustada, garantindo uma iluminação constante e uma maior eficiência energética.  <br /> 
-Considere as seguintes 5 escalas de intensidade de luz:
+## System A - Interior Lighting Control
+Develop a system to control the brightness of the interior space, where the lighting will be adjusted based on the intensity of sunlight, ensuring constant illumination and greater energy efficiency.  <br /> 
+Consider the following 5 light intensity scales:
 > $\geq$ 800 LED 255;
 > 
 > $\geq$ 600 e < 800 LED 192
@@ -13,47 +13,47 @@ Considere as seguintes 5 escalas de intensidade de luz:
 >
 > $\lt$ 200 LED 0
 
-Utilizar LED e sensor LDR para simular o sistema. <br /> 
-Apresentar o valor de entrada do sensor e saída do LED no monitor de série.
+Use LED and LDR sensor to simulate the system. <br /> 
+Display the sensor input value and LED output on the serial monitor.
 
-## Sistema B – Controlo de climatização 
-Desenvolver um sistema de controlo de temperatura ambiente através de ventilação, em que uma ventoinha é acionada para arrefecimento do espaço em função dos valores de temperatura fornecidos por um sensor.
-> Liga a ventoinha sempre que a temperatura ultrapassar os 24 graus celsius.
+## System B - Climate Control
+Develop a system to control ambient temperature through ventilation, where a fan is activated to cool the space based on temperature values provided by a sensor.
+> Turn on the fan whenever the temperature exceeds 24 degrees Celsius.
 >
-> Desliga a ventoinha sempre que a temperatura seja inferior a 20 graus celsius.
+> Turn off the fan whenever the temperature is below 20 degrees Celsius.
 >
-> Deve ainda dar indicação do controlo do ambiente através de 2 leds:
+> It should also indicate environmental control through 2 LEDs:
 > 
->> Led vermelho liga quando está em arrefecimento;
+>> Red LED turns on when cooling;
 >> 
->> Led verde liga quando está estabilizado.
+>> Green LED turns on when stabilized.
 >
-> O estado da ventoinha (“Fan ON/ Fan OFF”) deve ser apresentado na 1ª linha de um display lcd e na 2ª linha a temperatura atual (“Temp: xxxºC”)
+> The fan status ("Fan ON / Fan OFF") should be displayed on the 1st line of an LCD display and the current temperature ("Temp: xxxºC") on the 2nd line.
 >
-> Controlar a luminosidade do display com potenciómetro.
+> Control the display brightness with a potentiometer.
 
-## Sistema C – Sistema de segurança (alarme)
-Desenvolva um sistema de segurança para deteção de intrusões através de controlo de movimentos de intrusos.  <br /> 
-Sempre que o sensor PIR detetar movimento, deverá acionar:
-> Um sinal luminoso (led) vermelho intermitente.
+## System C - Security System (Alarm)
+Develop a security system for detecting intrusions through intruder movement control.  <br /> 
+Whenever the PIR sensor detects movement, it should activate:
+> A flashing red light signal (LED).
 > 
-> Um sinal sonoro característico de alarme com duração de 10 segundos.
+> A characteristic alarm sound signal lasting 10 seconds.
 > 
-> Considerar um botão (pressão) para desarmar o alarme.
+> Consider a button (press) to disarm the alarm.
 >
-> O alarme deverá repetir o sinal sonoro (10 segundos), com intervalos de 5 segundos até ser desarmado no botão.
+> The alarm should repeat the sound signal (10 seconds), with 5-second intervals until disarmed by the button.
 
-## Sistema D
-Desenvolver um sistema embebido adicional para integração na Smart Housing, para automatização de qualquer outra tarefa que achem útil (Estacionamento, rega, acessos, etc.). <br /> 
-Deve utilizar pelo menos 3 componentes distintos entre sensores e atuadores bem como a monitorização no monitor de série.
+## System D
+Develop an additional embedded system for integration into Smart Housing, to automate any other task you find useful (Parking, irrigation, access, etc.). <br /> 
+It should use at least 3 distinct components among sensors and actuators, as well as monitoring on the serial monitor.
 
-### Adicionalmente incluir à escolha de cada grupo, um dos seguintes requisitos em cada um dos 4 sistemas desenvolvidos.
+### Additionally, include one of the following requirements in each of the 4 developed systems, chosen by each group:
 >
-> Utilização de Interrupts num dos sistemas desenvolvidos.
+> Use of Interrupts in one of the developed systems.
 >
-> Criação de uma interface gráfica para monitorização remota em tempo real de um dos sistemas desenvolvidos.
+> Creation of a graphical interface for real-time remote monitoring of one of the developed systems.
 >
-> Multitasking (com Timer ou RTOS), ex: gerir concorrencialmente o tempo de execução de 2 ou mais componentes de um dos sistemas
+> Multitasking (with Timer or RTOS), e.g., concurrently managing the execution time of 2 or more components of one of the systems.
 >
-> Analisar a performance do programa através do path do programa, utilizando flags de referência e o timer no monitor de série. Esta análise deverá ser feita considerando 2 versões do programa de um dos sistemas de modo a concluir qual deles é energeticamente mais eficiente. 
+> Analyze the program's performance through the program path, using reference flags and the timer on the serial monitor. This analysis should be done considering 2 versions of the program of one of the systems to conclude which one is more energy efficient.
 
